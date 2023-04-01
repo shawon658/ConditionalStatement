@@ -10,6 +10,12 @@ public class StringMethod {
 		obj.compareTo();
 		obj.comapreToIgnoreCase();
 		obj.indexOf();
+		obj.intcharIndexOf();
+		obj.lastIndex();
+		obj.subString();
+		obj.expactSubstring();
+		obj.conCat();
+		obj.isEmpty();
 	}
 	
 	// Char CharAt(int Index);
@@ -88,6 +94,60 @@ public class StringMethod {
 		System.out.println(a.indexOf("o"));
 	}
 	//int and char indexOf method
-	
+	public void intcharIndexOf() {
+		String a = "alexxa";
+		System.out.println(a.indexOf('x', 1));
+	}
+	//last index of
+	public void lastIndex() {
+		String a = "alaex";
+		System.out.println(a.lastIndexOf('a'));
+	}
+	//sub string method
+	public void subString() {
+		
+		String a = "alex";
+		String b = "alaex";
+		
+		System.out.println(a.substring(2));
+		// other substring method
+		System.out.println(b.substring(2, 3));
+	}
+	// verifying expected and actual substring |idex of and substring both are example of method overloading
+	public void expactSubstring() {
+		
+		String name = "My name is Alex";
+		String actualName = name.substring(11, 15);
+		String expectedName = "Alex";
+		
+		if(actualName.equals(expectedName)) {
+			System.out.println("Name verified..");
+		}else {
+			System.out.println("Name does not match..");
+		}
+	}
+	//String concat method 
+	public void conCat() {
+		String name = "Mohamed";
+		String name2 = "Shawon";
+		
+		System.out.println(name+ " "+name2);
+		System.out.println(name.concat(name2));
+	}
+	//String replace method
+	public void replaceMethod() {
+		String name = "Alex";
+		String name2 = name.replace('A', 'Z');
+		
+		System.out.println(name2);
+	}
+	//String boolean isEmpty
+	public void isEmpty() {
+		String userName = "";
+		
+		if(userName.isEmpty()) {
+			System.out.println("Enter a valid username: ");
+		}
+	}
 
 }
