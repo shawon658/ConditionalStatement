@@ -7,6 +7,7 @@ public class LoopingConcept {
 		obj.forLoop();
 		obj.forLoopDsc();
 		obj.whileLoop();
+		obj.doWhileLoop();
 
 	}
 	//** for and while loop if particlar program does not match it will not execute. 
