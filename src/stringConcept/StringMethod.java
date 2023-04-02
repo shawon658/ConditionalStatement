@@ -1,5 +1,7 @@
 package stringConcept;
 
+import java.util.Arrays;
+
 public class StringMethod {
 
 	public static void main(String[] args) {
@@ -16,6 +18,9 @@ public class StringMethod {
 		obj.expactSubstring();
 		obj.conCat();
 		obj.isEmpty();
+		obj.tream();
+		obj.length();
+		obj.split();
 	}
 	
 	// Char CharAt(int Index);
@@ -149,5 +154,28 @@ public class StringMethod {
 			System.out.println("Enter a valid username: ");
 		}
 	}
+	//Trim method
+	public void tream() {
+		String userName = " Alex ";
+		System.out.println(userName);
+		System.out.println(userName.trim());
+	}
+	//length method
+	public void length() {
+		String userName = "Alex";
+		int lenght = userName.length();
+		System.out.println(lenght);
+		
+	}
+	//Split method
+	public void split() {
+		
+		String sentence ="I am a QA Lead";
+		 String[] Words=sentence.split(" ");//After using 
+		//split(), now it is an array
+		 System.out.println(Arrays.toString(Words));
+		 System.out.println("Number of words :"+Words.length);
+	}
+	
 
 }
