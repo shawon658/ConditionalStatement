@@ -9,6 +9,8 @@ public class ConditionalStatement {
 		obj.elseCondition();
 		obj.ifElseIfCondition();
 		obj.nestedIf();
+		obj.loopBreak();
+		obj.conTinue();
 		
 
 	}
@@ -68,6 +70,24 @@ public class ConditionalStatement {
 			}
 		}else {
 			System.out.println("Not adult");
+		}
+	}
+	// break
+	public void loopBreak() {
+		for (int i = 0; i<10; i++) {
+			if(i == 4) {
+				break;
+			}
+			System.out.println(i);
+		}
+	}
+	// continue for this 4 will be skipped.
+	public void conTinue() {
+		for(int i=0; i<10; i++) {
+			if(i==4) {
+				continue;
+			}
+			System.out.println(i);
 		}
 	}
 
